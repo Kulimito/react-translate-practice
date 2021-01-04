@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Rubik:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://wallpaperaccess.com/full/2109.jpg");
+  background-position: 20% 30%;
+  background-size: 180%;
+  background-repeat: none;
+  color: white;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.enter-text {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 15vh;
+}
+
+.enter-text label,
+.enter-text input {
+  text-align: center;
+  background: inherit;
+}
+
+.enter-text label {
+  font-family: "Audiowide", cursive;
+  text-shadow: 3px 2px 10px #ccc;
+  font-size: 48px;
+}
+
+.enter-text input {
+  font-family: "Audiowide", cursive;
+  margin-top: 30px;
+  padding: 10px;
+  background: transparent;
+  border-radius: 5px;
+  box-shadow: 3px 2px 10px #ccc;
+  font-size: 24px;
+  outline: none;
+}
+
+.select-language {
+  background: transparent;
+  /* border: 1px red solid; */
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 45vh;
+  z-index: 1;
+}
+
+.select-language label {
+  background: inherit;
+}
+
+.select-language button {
+  background: transparent;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px #ccc;
+  width: 150px;
+  height: 30px;
+  outline: none;
+  margin-bottom: 10px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+.select-language button:hover {
+  box-shadow: 0px 0px 5px 1px #cbf54c;
+}
+
+.select-language ul {
+  background: transparent;
+  list-style: none;
+}
+
+.select-language li {
+  font-family: "Rubik", sans-serif;
+  background: transparent;
+  box-shadow: 1px 1px 5px #ccc;
+  margin: 3px;
+  padding: 5px;
+  text-align: center;
+}
+
+.select-language li:hover {
+  box-shadow: 0px 0px 10px #7f23a8;
+}
+
+.closed {
+  opacity: 0;
+  transition: opacity 0.3s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.open {
+  position: relative;
+  z-index: 200;
+  opacity: 1;
+  transition: opacity 0.5s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.result {
+  background: transparent;
+  font-size: 72px;
+  font-family: "Audiowide", cursive;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 70vh;
+  position: fixed;
+  opacity: 1;
+  transition: opacity 0.5s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.result-close {
+  opacity: 0;
+  transition: opacity 0.5s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
